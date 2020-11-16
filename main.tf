@@ -9,7 +9,7 @@ terraform {
 provider "google" {
   version = "3.5.0"
 
-  credentials = "${TF_VAR_GOOGLE_CREDENTIALS}"
+  credentials = var.GOOGLE_CREDENTIALS
 
   project = "cc2021-clouddi"
   region  = "us-central1"
